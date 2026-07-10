@@ -1,0 +1,352 @@
+/* ==========================================================================
+   1. Base Setup & Typography
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #11161d;
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   1.5 Navbar Styles
+   ========================================================================== */
+
+/* Main Navbar Layout Container */
+nav, .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 120px;   /* Matches your exact 120px page alignment */
+    padding-right: 120px;  /* Matches your exact 120px page alignment */
+    background-color: #1a1a1a; /* Matches your dark theme background */
+}
+
+/* Logo / Brand Name Styling */
+.logo, nav h2, .nav-brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f8c8a5; /* Your classic light orange accent color */
+    text-decoration: none;
+}
+
+/* Right-Side Links Container */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Space between Portfolio, Blog, and the Button */
+    list-style: none; /* Removes any bullet points if you used an <ul> */
+}
+
+/* Individual Link Styling (Erase Purple & Underlines) */
+.nav-links a {
+    color: #b0b5bc; /* Clean gray text color */
+    text-decoration: none; /* Removes the ugly default underline */
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Text Link Hover */
+.nav-links a:hover {
+    color: #f8c8a5; /* Changes to solid white instantly on hover */
+}
+
+/* The Specialized "Hire Me" Button Case */
+.nav-links .hire-btn, .nav-links a.hire-btn {
+    background-color: #f8c8a5;
+    color: #11161d; /* Dark text inside the light button for readability */
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: 2px solid #f8c8a5;
+}
+
+/* "Hire Me" Button Hover (Transition-Free Orange) */
+.nav-links .hire-btn:hover, .nav-links a.hire-btn:hover {
+    background-color: #ff7f00;
+    border-color: #ff7f00;
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   2. Hero Section Styles
+   ========================================================================== */
+
+/* Main Layout Container */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Aligns both sides perfectly to the bottom baseline */
+    padding-top: 100px;    
+    padding-bottom: 0;     /* Keeps the main container floor flat for the photo */
+    padding-left: 120px;   
+    padding-right: 120px;  
+    background-color: #11161d; 
+}
+
+/* Left Content Area */
+.hero-content {
+    width: 650px;          
+    padding-bottom: 80px;  /* Adds dedicated space directly under your buttons */
+}
+
+/* Subtitle Heading */
+.hero-content .subtitle {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #f8c8a5;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* Main Heading (Name) */
+.hero-content h1 {
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+/* Highlighted Name Color */
+.hero-content .highlight {
+    color: #f8c8a5;
+}
+
+/* Description Text */
+.hero-content p {
+    font-size: 18px;
+    color: #b0b5bc;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* Button Container Box */
+.hero-btns {
+    display: flex;
+    gap: 20px;
+}
+
+/* Base Link Button Styles */
+.hero-btns a {
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Primary Button (View My Work) */
+.primary-btn {
+    background-color: #f8c8a5;
+    color: #ffffff;
+    border: 2px solid #f8c8a5;
+}
+
+.primary-btn:hover {
+    background-color: #ff7f00; 
+    border-color: #ff7f00;     
+}
+
+/* Secondary Button (Let's Talk) */
+.secondary-btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.secondary-btn:hover {
+    background-color: #ff7f00; 
+    color: #ffffff;            
+    border-color: #ff7f00;     
+}
+
+/* Right Side Image Container */
+.hero-image-container {
+    width: 480px;          
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 0;      
+    font-size: 0;          /* Eliminates line-height spacing inside the box */
+    line-height: 0;
+}
+
+/* Actual Image Styling */
+.hero-img {
+    width: 420px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0; /* Rounded at the top, flat on the bottom edge */
+    display: block;         /* Eliminates default inline text spacing below image */
+    vertical-align: bottom;
+}
+
+/* ==========================================================================
+   3. About & Info Section Styles
+   ========================================================================== */
+.about-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 120px;
+    padding-right: 120px;
+    background-color: #161b22; /* Lighter dark tone to split sections visually */
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Left Side Biography Styling */
+.about-text {
+    width: 550px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    color: #f8c8a5;
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #b0b5bc;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Right Side Details Box Styling */
+.info-box {
+    width: 450px;
+    background-color: #11161d;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #21262d;
+}
+
+.info-box h3 {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-list li {
+    font-size: 16px;
+    color: #b0b5bc;
+    padding: 15px 0;
+    border-bottom: 1px solid #21262d;
+}
+
+.info-list li strong {
+    color: #ffffff;
+}
+
+/* Link Style inside list */
+.info-link {
+    color: #f8c8a5;
+    text-decoration: none;
+}
+
+.info-link:hover {
+    color: #ff7f00;
+}
+
+.info-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* ==========================================================================
+   4. Projects Section Styles
+   ========================================================================== */
+.projects-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 120px;
+    padding-right: 120px;
+    background-color: #11161d; /* Back to main theme tone */
+}
+
+.projects-header {
+    margin-bottom: 50px;
+}
+
+.projects-header h2 {
+    font-size: 36px;
+    color: #f8c8a5;
+    margin-bottom: 15px;
+}
+
+.projects-header p {
+    font-size: 16px;
+    color: #b0b5bc;
+}
+
+/* Side-by-Side Grid */
+.projects-grid {
+    display: flex;
+    gap: 30px;
+}
+
+/* Project Card Blocks */
+.project-card {
+    width: 535px; /* Balanced layout across a 1100px window */
+    background-color: #161b22;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #21262d;
+}
+
+/* Language Label Tags */
+.project-tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #f8c8a5;
+    background-color: rgba(248, 200, 165, 0.1);
+    padding: 5px 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 15px;
+    color: #b0b5bc;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Project Action Links */
+.project-link {
+    color: #f8c8a5;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.project-link:hover {
+    color: #ff7f00;
+}
