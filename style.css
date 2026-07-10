@@ -279,7 +279,7 @@ nav, .navbar {
     padding-bottom: 100px;
     padding-left: 120px;
     padding-right: 120px;
-    background-color: #11161d; /* Back to main theme tone */
+    background-color: #11161d; 
 }
 
 .projects-header {
@@ -297,32 +297,25 @@ nav, .navbar {
     color: #b0b5bc;
 }
 
-/* Side-by-Side Grid */
 .projects-grid {
     display: flex;
     gap: 30px;
 }
 
-/* Project Card Blocks */
 .project-card {
-    width: 535px; /* Balanced layout across a 1100px window */
+    width: 535px; 
     background-color: #161b22;
     padding: 35px;
     border-radius: 12px;
     border: 1px solid #21262d;
 }
 
-/* Language Label Tags */
-.project-tag {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #f8c8a5;
-    background-color: rgba(248, 200, 165, 0.1);
-    padding: 5px 12px;
-    border-radius: 4px;
-    margin-bottom: 20px;
+/* New PNG Logo Graphic Constraint Layout */
+.project-logo-img {
+    height: 40px;          /* Clean fixed sizing so logos look uniform */
+    width: auto;           /* Maintains perfect aspect ratio */
+    display: block;
+    margin-bottom: 20px;   /* Exact structural gap above heading */
 }
 
 .project-card h3 {
@@ -338,7 +331,6 @@ nav, .navbar {
     margin-bottom: 25px;
 }
 
-/* Project Action Links */
 .project-link {
     color: #f8c8a5;
     text-decoration: none;
