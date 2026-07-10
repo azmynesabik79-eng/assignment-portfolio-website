@@ -342,3 +342,52 @@ nav, .navbar {
 .project-link:hover {
     color: #ff7f00;
 }
+
+
+/* footersec */
+
+
+.footer-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 120px;   
+    padding-right: 120px;  
+    background-color: #1d314e; 
+    border-top: 1px solid #21262d; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-credit {
+    font-size: 14px;
+    color: #666666; 
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px; /* Crisp spacing between the two social logos */
+    align-items: center;
+}
+
+/* Image Wrapper Settings */
+.footer-logo-link {
+    display: inline-block;
+    line-height: 0;
+}
+
+/* PNG Logo Sizing Constraints */
+.footer-logo-img {
+    height: 24px;          /* Clean, standard icon sizing for footers */
+    width: auto;
+    opacity: 0.6;          /* Subtly blends into the background by default */
+    display: block;
+}
+
+/* Hover State: Instantly lights up image to white when moused over */
+.footer-logo-link:hover .footer-logo-img {
+    opacity: 1;
+}
